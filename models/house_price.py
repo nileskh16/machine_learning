@@ -24,7 +24,7 @@ print('Error of the model is around {0}'.format(error))
 
 iowa_forest_model = RandomForestRegressor()
 iowa_forest_model.fit(trainX, trainY)
-forest_result = iowa_forest_model.predict(textX)
+forest_result = iowa_forest_model.predict(testX)
 forest_mae = mean_absolute_error(testY, forest_result)
 print('The Forest Mean Absolute error is {0}'.format(forest_mae))
 
